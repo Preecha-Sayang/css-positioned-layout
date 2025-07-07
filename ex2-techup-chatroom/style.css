@@ -1,1 +1,77 @@
 /* Start coding here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #777;
+    color: white;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chat-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 300px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.message.left {
+    background-color: #777;
+    color: white;
+    align-self: flex-start;
+    width: 150px;
+}
+
+.message.right {
+    background-color: #00cc44;
+    color: white;
+    align-self: flex-end;
+}
+
+.emoji {
+    font-size: 18px;
+}
+
+.status-message {
+    background-color: #ccc;
+    color: #666;
+    align-self: flex-end;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.reaction-message {
+    background-color: #00cc44;
+    color: white;
+    align-self: flex-end;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-align: center;
+    min-width: 80px;
+}
