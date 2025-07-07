@@ -1,5 +1,65 @@
 body {
   font-family: "Kanit";
+  background: #000;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tea-card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  overflow: hidden;
+  max-width: 480px;
+  width: 100%;
+  border: 6px solid #fff;
+}
+
+.tea-card__figure {
+  position: relative;
+  margin: 0;
+}
+
+.tea-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tea-card__location-label {
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  background: rgba(100, 100, 100, 0.8);
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 1px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+}
+
+.tea-card__caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 5px;
+  height: 100px;
+  color: #fff;
+  font-size: 18px;
+  background: linear-gradient(0deg, rgba(0,0,0,10) 0%, rgba(0,0,0,0) 100%);
+  font-family: serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* Start coding here */
